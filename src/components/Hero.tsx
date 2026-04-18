@@ -62,7 +62,7 @@ function Hero() {
             View Projects
           </a>
           <a
-            href="/resume.pdf"
+            href="/Himanshu_Mahendrabhai_Mali_CV.pdf"
             download
             className="w-full rounded-full border border-slate-300 bg-white px-7 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:scale-[1.02] hover:border-slate-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:border-slate-500 sm:w-auto"
           >
