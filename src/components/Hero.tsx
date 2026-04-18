@@ -22,7 +22,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="relative mx-auto flex min-h-screen w-full max-w-6xl items-center overflow-hidden px-4 py-28 sm:px-6 lg:px-8"
+      className="relative mx-auto flex min-h-screen w-full max-w-6xl items-center overflow-hidden px-4 py-28 sm:px-6 lg:px-8 scroll-mt-20"
     >
       <div className="hero-grid pointer-events-none absolute inset-0 -z-10" />
       <div className="pointer-events-none absolute -left-24 top-16 -z-10 h-72 w-72 rounded-full bg-blue-400/20 blur-3xl dark:bg-blue-500/20" />

@@ -70,44 +70,75 @@ function Contact() {
   }
 
   return (
-    <section id="contact" className="section-shell section-divider flex min-h-screen items-center bg-white dark:bg-slate-950">
+    <section id="contact" className="section-shell section-divider flex min-h-screen items-center bg-white dark:bg-slate-950 scroll-mt-20">
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-2">
-          <div data-reveal>
-            <h2 className="section-title">Contact</h2>
-            <p className="section-subtitle">
-              I am open to internship opportunities, project collaborations, and data-focused roles.
-            </p>
+          <div data-reveal className="max-w-xl">
+  <h2 className="bg-gradient-to-r from-blue-700 via-indigo-600 to-violet-600 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl dark:from-blue-300 dark:via-indigo-300 dark:to-violet-300">
+    Let’s Connect
+  </h2>
 
-            <div className="mt-8 space-y-4 text-sm text-slate-700 dark:text-slate-300">
-              <p>
-                <span className="font-semibold text-slate-900 dark:text-slate-100">Email:</span>{' '}
-                {targetEmail}
-              </p>
-              <p>
-                <span className="font-semibold text-slate-900 dark:text-slate-100">GitHub:</span>{' '}
-                <a
-                  href="https://github.com/HimanshuMali701"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-medium text-blue-700 hover:text-blue-800"
-                >
-                  github.com/HimanshuMali701
-                </a>
-              </p>
-              <p>
-                <span className="font-semibold text-slate-900 dark:text-slate-100">LinkedIn:</span>{' '}
-                <a
-                  href="https://www.linkedin.com/in/himanshu-mali701/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-medium text-blue-700 hover:text-blue-800"
-                >
-                  linkedin.com/in/himanshu-mali701
-                </a>
-              </p>
-            </div>
-          </div>
+  <p className="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed">
+    I’m actively seeking{" "}
+    <span className="font-medium text-blue-600 dark:text-blue-400">
+      internship opportunities
+    </span>
+    ,{" "}
+    <span className="font-medium text-indigo-600 dark:text-indigo-400">
+      project collaborations
+    </span>
+    , and{" "}
+    <span className="font-medium text-violet-600 dark:text-violet-400">
+      data-focused roles
+    </span>
+    . If you’re working on something interesting or have an opportunity, feel free to reach out.
+  </p>
+
+  {/* 🔥 Contact Info */}
+  <div className="mt-8 space-y-5 text-sm">
+
+    {/* Email */}
+    <div className="group flex items-center justify-between rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 transition hover:shadow-md dark:border-slate-800 dark:bg-slate-900">
+      <span className="font-medium text-slate-700 dark:text-slate-300">
+        Email
+      </span>
+      <span className="text-blue-700 group-hover:underline dark:text-blue-400">
+        {targetEmail}
+      </span>
+    </div>
+
+    {/* GitHub */}
+    <a
+      href="https://github.com/HimanshuMali701"
+      target="_blank"
+      rel="noreferrer"
+      className="group flex items-center justify-between rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 transition hover:shadow-md dark:border-slate-800 dark:bg-slate-900"
+    >
+      <span className="font-medium text-slate-700 dark:text-slate-300">
+        GitHub
+      </span>
+      <span className="text-blue-700 group-hover:underline dark:text-blue-400">
+        View Profile →
+      </span>
+    </a>
+
+    {/* LinkedIn */}
+    <a
+      href="https://www.linkedin.com/in/himanshu-mali701/"
+      target="_blank"
+      rel="noreferrer"
+      className="group flex items-center justify-between rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 transition hover:shadow-md dark:border-slate-800 dark:bg-slate-900"
+    >
+      <span className="font-medium text-slate-700 dark:text-slate-300">
+        LinkedIn
+      </span>
+      <span className="text-blue-700 group-hover:underline dark:text-blue-400">
+        Connect →
+      </span>
+    </a>
+
+  </div>
+</div>
 
           <form
             data-reveal

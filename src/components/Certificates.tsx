@@ -38,7 +38,7 @@ const featuredCertificates: FeaturedCertificate[] = [
   {
     title: 'NPTEL: The Joy of Computing Using Python',
     issuer: 'IIT Madras',
-    year: '2024',
+    year: '2025',
     image: '/certificates/nptel-joy-of-computing.png',
     link: '/certificates/nptel-joy-of-computing.pdf',
   },
@@ -55,15 +55,30 @@ function Certificates() {
   return (
     <section
       id="certificates"
-      className="section-shell section-divider flex min-h-screen items-center bg-slate-50/70 dark:bg-slate-900/45"
+      className="section-shell section-divider flex min-h-screen items-center bg-slate-50/70 dark:bg-slate-900/45 scroll-mt-20"
     >
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div data-reveal>
-          <h2 className="section-title">Certificates</h2>
-          <p className="section-subtitle">
-            A focused set of verified achievements that demonstrate practical, recruiter-relevant skills.
-          </p>
-        </div>
+        <div data-reveal className="max-w-2xl">
+  <h2 className="bg-gradient-to-r from-blue-700 via-indigo-600 to-violet-600 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl dark:from-blue-300 dark:via-indigo-300 dark:to-violet-300">
+    Certifications
+  </h2>
+
+  <p className="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed">
+    A curated collection of certifications validating my expertise in{" "}
+    <span className="font-medium text-blue-600 dark:text-blue-400">
+      data science
+    </span>
+    ,{" "}
+    <span className="font-medium text-indigo-600 dark:text-indigo-400">
+      analytics
+    </span>
+    , and{" "}
+    <span className="font-medium text-violet-600 dark:text-violet-400">
+      modern technologies
+    </span>
+    — aligned with real-world, industry-relevant skills.
+  </p>
+</div>
 
         <div className="mt-12" data-reveal>
           <h3 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 sm:text-2xl">

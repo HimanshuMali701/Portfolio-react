@@ -137,14 +137,29 @@ function Projects() {
   const otherProjects = projects.filter((project) => !project.featured)
 
   return (
-    <section id="projects" className="section-shell section-divider flex min-h-screen items-center bg-white dark:bg-slate-950">
+    <section id="projects" className="section-shell section-divider flex min-h-screen items-center bg-white dark:bg-slate-950 scroll-mt-20">
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div data-reveal>
-          <h2 className="section-title">Projects</h2>
-          <p className="section-subtitle">
-            Selected work across machine learning, analytics, and software implementation.
-          </p>
-        </div>
+        <div data-reveal className="max-w-2xl">
+  <h2 className="bg-gradient-to-r from-blue-700 via-indigo-600 to-violet-600 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl dark:from-blue-300 dark:via-indigo-300 dark:to-violet-300">
+    Featured Projects
+  </h2>
+
+  <p className="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed">
+    A curated selection of projects showcasing my work in{" "}
+    <span className="font-medium text-blue-600 dark:text-blue-400">
+      Data Science
+    </span>
+    ,{" "}
+    <span className="font-medium text-indigo-600 dark:text-indigo-400">
+      Analytics
+    </span>
+    , and{" "}
+    <span className="font-medium text-violet-600 dark:text-violet-400">
+      intelligent systems
+    </span>
+    — focused on solving real-world problems with practical, data-driven solutions.
+  </p>
+</div>
 
         {featuredProjects.length > 0 ? (
           <div className="mt-12">

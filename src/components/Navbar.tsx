@@ -19,10 +19,16 @@ function Navbar({ theme, onToggleTheme }: NavbarProps) {
   const [activeSection, setActiveSection] = useState('home')
 
   const scrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    })
+    const element = document.getElementById(sectionId)
+    if (element) {
+      const navbarHeight = 80
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset
+      const offsetPosition = elementPosition - navbarHeight
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      })
+    }
   }
 
   useEffect(() => {
