@@ -7,7 +7,7 @@
 
 ## 🌐 Live Portfolio
 
-👉 https://your-portfolio-link.com
+👉 https://himanshumali.vercel.app/
 
 ---
 
