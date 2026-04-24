@@ -8,18 +8,32 @@ type FeaturedCertificate = {
 
 const featuredCertificates: FeaturedCertificate[] = [
   {
-    title: 'ISRO Bhartiya Antriksh Hackathon',
-    issuer: 'ISRO',
-    year: '2025',
-    image: '/certificates/isro-hackathon.jpg',
-    link: '/certificates/isro-hackathon.jpg',
+    title: 'Data Science, Machine Learning, Deep Learning & NLP Bootcamp',
+    issuer: 'Udemy (Instructor: Krish Naik)',
+    year: '2026',
+    image: '/certificates/Udemy-Data-science-course.png',
+    link: '/certificates/Udemy-Data-science-course.pdf',
   },
   {
+    title: 'Edunet Advanced Course (AI, Machine Learning, Deep Learning)',
+    issuer: 'Edunet Foundation',
+    year: '2026',
+    image: '/certificates/edunet-course-Adv.png',
+    link: '/certificates/edunet-course-Adv.pdf',
+  },
+  { 
     title: 'Innovation Marathon',
     issuer: 'Edunet Foundation',
     year: '2026',
     image: '/certificates/innovation-marathon.png',
     link: '/certificates/innovation-marathon.pdf',
+  },
+  {
+    title: 'ISRO Bhartiya Antriksh Hackathon',
+    issuer: 'ISRO',
+    year: '2025',
+    image: '/certificates/isro-hackathon.jpg',
+    link: '/certificates/isro-hackathon.jpg',
   },
   {
     title: 'InternBoot Data Science Internship',

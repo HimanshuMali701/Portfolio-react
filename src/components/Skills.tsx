@@ -1,34 +1,59 @@
 type SkillCategory = {
-  title: 'Programming' | 'Data Science' | 'Analytics' | 'Tools' | 'AI'
+  title: 'Programming' | 'Data Science' | 'Analytics' | 'Tools' | 'AI and Machine Learning'
   description?: string
   skills: string[]
 }
 
 const categories: SkillCategory[] = [
+
   {
-    title: 'Programming',
-    description: 'Core languages used to build analytical and machine learning workflows.',
-    skills: ['Python', 'SQL', 'C'],
+    title: 'AI and Machine Learning',
+    description: 'Building intelligent systems using Machine Learning, Deep Learning, and Natural Language Processing.',
+    skills: [
+      'Machine Learning',
+      'Deep Learning',
+      'NLP',
+      'TensorFlow',
+      'Flask',
+      'LLMs (Ollama)',
+      'Model Development',
+      
+    ],
   },
   {
     title: 'Data Science',
-    description: 'Libraries and methods for model development and experimentation.',
-    skills: ['Pandas', 'NumPy', 'Scikit-learn',  'Feature Engineering', 'Model Evaluation'],
+    description: 'Data-driven problem solving through analysis, feature engineering, and model building.',
+    skills: [
+      'Pandas',
+      'NumPy',
+      'Scikit-learn',
+      'Feature Engineering',
+      'Data Preprocessing',
+      'Model Evaluation'
+    ],
   },
   {
     title: 'Analytics',
-    description: 'Data preparation and reporting capabilities for decision-focused insights.',
-    skills: ['Data Cleaning', 'Transformation', 'EDA','Dashboarding', 'MySQL', 'MongoDB','Power BI'],
+    description: 'Extracting insights through data cleaning, transformation, and visualization.',
+    skills: [
+      'EDA',
+      'Data Cleaning',
+      'Data Transformation',
+      'Dashboarding',
+      'Power BI',
+      'MySQL',
+      'MongoDB'
+    ],
+  },
+  {
+    title: 'Programming',
+    description: 'Writing efficient code for data processing and problem solving.',
+    skills: ['Python', 'SQL', 'C'],
   },
   {
     title: 'Tools',
-    description: 'Everyday tooling for development, experimentation, and delivery.',
+    description: 'Tools for development, experimentation, and deployment.',
     skills: ['Git', 'GitHub', 'Jupyter', 'Streamlit', 'Excel', 'VS Code'],
-  },
-  {
-    title: 'AI',
-    description: 'Applied AI topics used in intelligent, data-driven applications.',
-    skills: ['TensorFlow', 'NLP', 'LLM (Ollama)'],
   },
 ]
 
